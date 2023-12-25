@@ -18,6 +18,7 @@ yarn.lock
 
 lib/
 refs/
+public/build
 
 database-debug.log
 firebase-debug.log
