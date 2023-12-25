@@ -1,0 +1,40 @@
+:root {
+  // --bg-color: #86e3ce;
+  --bg-color: #e8e8e8;
+	--font-color: #7b7b7b;
+}
+
+html {
+	font-size: 16px;
+	@media screen and (max-width: 1200px) {
+		font-size: 14.5px;
+	}
+	@media screen and (max-width: 960px) {
+		font-size: 13.5px;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 9px;
+	}
+}
+
+body {
+  font-family: 'Nunito', 'Open Sans Condensed', sans-serif;
+  background: var(--bg-color);
+	color: var(--font-color);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../../app/assets/fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+#font-hack {
+  position: absolute;
+  font-family: 'Nunito';
+  left: -200%;
+}
