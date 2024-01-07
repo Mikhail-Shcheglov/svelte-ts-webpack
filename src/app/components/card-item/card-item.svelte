@@ -3,7 +3,15 @@
 	export let isSelected = false;
 </script>
 
-<div class:selected={isSelected} class="card-item">
+<div
+	class:selected={isSelected}
+	class="card-item"
+	on:click
+	on:keydown={() => {}}
+	aria-roledescription="meow"
+	tabindex="0"
+	role="gridcell"
+>
 	<img {src} alt="card" />
 </div>
 
