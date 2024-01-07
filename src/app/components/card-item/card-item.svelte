@@ -3,8 +3,7 @@
 	export let isSelected = false;
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class:selected={isSelected} class="card-item" on:click>
+<div class:selected={isSelected} class="card-item">
 	<img {src} alt="card" />
 </div>
 
