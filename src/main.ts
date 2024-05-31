@@ -1,5 +1,5 @@
-import './shared/styles/reset.scss';
-import './shared/styles/global.scss';
+import './shared/styles/reset.less';
+import './shared/styles/global.less';
 
 import App from './app/app.svelte';
 
