@@ -100,6 +100,12 @@ const config: Configuration = {
 								plugins: [Autoprefixer],
 							},
 						}),
+						onwarn: (warning: { code: string }, handler: (config: { code: string }) => void) => {
+							if (warning.code === 'css-unused-selector') {
+								return;
+							}
+							handler(warning);
+						},
 					},
 				},
 			},
@@ -202,7 +208,7 @@ const config: Configuration = {
  * This interface combines configuration from `webpack` and `webpack-dev-server`. You can add or override properties
  * in this interface to change the config object type used above.
  */
-export interface Configuration extends Webpack.Configuration, WebpackDev.Configuration {}
+export interface Configuration extends Webpack.Configuration, WebpackDev.Configuration { }
 
 /** ****************************************************************************************************************** */
 /** ********                                             Advanced                                            ********* */

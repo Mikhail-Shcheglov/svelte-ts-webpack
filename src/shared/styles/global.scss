@@ -1,7 +1,7 @@
 :root {
 	// --bg-color: #86e3ce;
 	--bg-color: #e8e8e8;
-	--font-color: #7b7b7b;
+	--font-color: #000;
 }
 
 html {
@@ -24,6 +24,12 @@ body {
 	font-family: 'Nunito', 'Open Sans Condensed', sans-serif;
 	background: var(--bg-color);
 	color: var(--font-color);
+	background-color: #070023;
+	// overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
 }
 
