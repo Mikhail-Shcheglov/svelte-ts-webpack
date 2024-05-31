@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { CoffeSort } from 'src/app/interfaces/coffee-sort';
+	import { scrollHorizontaly } from '../actions/scroll-horizontaly';
 
 	export let blend_name: CoffeSort['blend_name'];
 	export let intensifier: CoffeSort['intensifier'];
@@ -7,13 +8,7 @@
 	export let origin: CoffeSort['origin'];
 	export let variety: CoffeSort['variety'];
 
-	let notesElement: HTMLDivElement;
-
 	$: notesArr = notes.split(', ');
-
-	const handleNotesWheel = (evt: WheelEvent) => {
-		notesElement.scrollLeft += evt.deltaY;
-	};
 </script>
 
 <div class="coffe-sort-card">
@@ -37,11 +32,7 @@
 
 		<div class="coffe-sort-card__variety">{variety}</div>
 
-		<div
-			class="coffe-sort-card__notes"
-			on:wheel|preventDefault={handleNotesWheel}
-			bind:this={notesElement}
-		>
+		<div class="coffe-sort-card__notes" use:scrollHorizontaly>
 			{#each notesArr as note}
 				<span class="coffe-sort-card__note">
 					{note}
