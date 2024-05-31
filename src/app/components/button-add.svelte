@@ -4,7 +4,7 @@
 
 <button class="btn-add" class:btn-add__disable={disabled} on:click />
 
-<style style="scss">
+<style style="less">
 	.btn-add {
 		position: relative;
 		width: 80px;
@@ -40,7 +40,7 @@
 		}
 	}
 
-	/** SCSS почему-то подхватывает &__disable не как селектор класса, а селектор тега. */
+	/** LESS почему-то подхватывает &__disable не как селектор класса, а селектор тега. */
 	.btn-add__disable {
 		cursor: not-allowed;
 		background-color: grey;

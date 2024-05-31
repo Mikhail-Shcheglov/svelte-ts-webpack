@@ -15,11 +15,9 @@
 		"typescript",
 		"svelte4",
 		"webpack",
-		"scss",
 		"eslint-prettier",
 		"eslint",
-		"prettier",
-		"firebase"
+		"prettier"
 	],
 	"devDependencies": {
 		"@babel/core": "^7.23.6",

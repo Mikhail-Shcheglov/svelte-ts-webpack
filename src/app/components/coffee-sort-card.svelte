@@ -42,7 +42,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style lang="less">
 	.coffe-sort-card {
 		position: relative;
 		width: 100%;

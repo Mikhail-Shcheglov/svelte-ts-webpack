@@ -24,7 +24,7 @@
 	</div>
 </main>
 
-<style lang="scss">
+<style lang="less">
 	.page {
 		width: 100vw;
 		height: 100vh;

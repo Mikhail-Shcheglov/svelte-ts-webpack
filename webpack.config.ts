@@ -35,7 +35,7 @@ const useBabelInDevelopment = false;
 /**
  * Define paths to any stylesheets you wish to include at the top of the CSS bundle. Any styles compiled from svelte
  * will be added to the bundle after these. In other words, these are global styles for your svelte app. You can also
- * specify paths to SCSS or SASS files, and they will be compiled automatically.
+ * specify paths to LESS or SASS files, and they will be compiled automatically.
  */
 const stylesheets = ['./src/shared/styles/reset.less', './src/shared/styles/global.less'];
 
@@ -94,8 +94,7 @@ const config: Configuration = {
 							optimistic: true,
 						},
 						preprocess: SveltePreprocess({
-							scss: true,
-							sass: true,
+							less: true,
 							postcss: {
 								plugins: [Autoprefixer],
 							},

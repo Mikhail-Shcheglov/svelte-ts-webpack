@@ -1,6 +1,6 @@
 # Svelte Phaser Webpack Starter
 
-A starter template for [Svelte](https://svelte.dev) that comes preconfigured with Webpack, TypeScript, SCSS, Babel,
+A starter template for [Svelte](https://svelte.dev) that comes preconfigured with Webpack, TypeScript, LESS, Babel,
 Autoprefixer, and HMR.
 
 - [Getting started](#getting-started)
@@ -77,11 +77,11 @@ Add one or more global stylesheets to the bundle by editing the `stylesheets` va
 
 ```ts
 const stylesheets = [
-    './src/styles/index.scss'
+    './src/styles/index.less'
 ];
 ```
 
-You can specify `css`, `scss`, and `sass` files here, and they will be compiled and minified as necessary. These styles
+You can specify `css`, and `less` files here, and they will be compiled and minified as necessary. These styles
 will be added to the beginning of the bundle in the order specified. Svelte's styles will always appear last.
 
 ### Single page applications
